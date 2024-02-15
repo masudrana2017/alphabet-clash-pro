@@ -24,3 +24,24 @@ function setBackgroundColorByID(elementId){
     const element=document.getElementById(elementId);
     element.classList.add('bg-orange-400')
 }
+
+function removeBackgroundColorByID(elementId){
+    const element=document.getElementById(elementId);
+    element.classList.remove('bg-orange-400')
+}
+
+function getElementByTextId(elementId){
+    const element=document.getElementById(elementId);
+    const elementTextValue=element.innerText;
+    const value=parseInt(elementTextValue);
+    return value;
+}
+function setTextElementValueById(elementId,value){
+    const element=document.getElementById(elementId);
+    element.innerText=value;
+}
+function getTextById(elementId){
+    const element=document.getElementById(elementId);
+    const text=element.innerText;
+    return text;
+}
